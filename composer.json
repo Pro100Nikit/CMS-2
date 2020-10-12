@@ -1,0 +1,21 @@
+{
+  "name": "CMS-2",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Nikita Lukin",
+      "email": "pnonniki@gmail.com"
+    }
+  ],
+  "require": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "ishop\\": "vendor/ishop",
+      "app\\": "app"
+    }
+  }
+}
