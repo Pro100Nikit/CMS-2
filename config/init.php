@@ -7,18 +7,15 @@ define("APP", ROOT . '/app');
 define("CORE", ROOT . '/vendor/ishop/core');
 define("LIBS", ROOT . '/vendor/ishop/core/libs');
 define("CACHE", ROOT . '/tmp/cache');
-define("CONFIG", ROOT . '/config');
+define("CONF", ROOT . '/config');
 define("LAYOUT", 'default');
 
-//http://cms-2/public/index.php
+// http://ishop2.loc/public/index.php
 $app_path = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";
-
-//http://cms-2/public
+// http://ishop2.loc/public/
 $app_path = preg_replace("#[^/]+$#", '', $app_path);
-
-//http://cms-2
+// http://ishop2.loc
 $app_path = str_replace('/public/', '', $app_path);
-
 define("PATH", $app_path);
 define("ADMIN", PATH . '/admin');
 
