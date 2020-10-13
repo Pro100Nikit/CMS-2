@@ -10,11 +10,10 @@
     }
   ],
   "require": {
-
   },
   "autoload": {
     "psr-4": {
-      "ishop\\": "vendor/ishop",
+      "ishop\\": "vendor/ishop/core",
       "app\\": "app"
     }
   }
